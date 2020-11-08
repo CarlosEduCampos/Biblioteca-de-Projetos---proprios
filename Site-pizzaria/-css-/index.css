@@ -1,0 +1,90 @@
+@charset "UTF-8";
+*{
+    margin:0px;
+    padding: 0px;
+}
+.corpo{
+    box-shadow: 5px 2px 5px rgba(255, 255, 255, 0.164);
+    background-color: rgba(64, 27, 10, 0.521);
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 950px;
+    border-radius: 15px;
+    border:solid 1px rgba(73, 73, 73, 0.322);
+    text-align: justify;
+    font-size: 15pt;
+    color: rgb(252, 252, 252);
+    text-shadow: 2px 0px 2px rgba(245, 245, 245, 0.178);
+}
+.corpo h1{
+    margin-bottom: 10px;
+    font-size: 30pt;
+    text-align: center;
+    font-style: oblique;
+}
+#foto-c-city{
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(245, 245, 245, 0.342);
+    border: solid 1px black;
+    max-width: 600px;
+    margin: 10px;
+    float: left;
+}
+#imagens{
+    text-align: center;
+}
+.cardapio{
+    margin: auto;
+    max-width: 900px;
+}
+
+@media(max-width: 950px ){
+    .cardapio{
+        max-width: 600px;
+    }
+    .corpo{
+        margin: 20px 20px 20px 20px;
+    }
+    #foto-c-city{
+        max-width: 500px;
+    }
+}
+@media(max-width: 650px ){
+    .cardapio{
+        max-width: 400px;
+    }
+    #foto-c-city{
+        max-width: 400px;
+    }
+}
+@media(max-width: 600px ){
+    .cardapio{
+        max-width: 340px;
+    }
+    #foto-c-city{
+        max-width: 300px;
+    }
+}
+@media(max-width: 400px ){
+    .cardapio{
+        max-width: 300px;
+        margin: -5px;
+    }
+    #foto-c-city{
+        max-width: 300px;
+    }
+}
+
+.info{
+    box-shadow: 5px 2px 5px rgba(255, 255, 255, 0.164);
+    background-color: rgba(64, 27, 10, 0.521);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 250px;
+    border-radius: 15px;
+    border:solid 1px rgba(73, 73, 73, 0.322);
+    text-align:center;
+    font-size: 15pt;
+    color: rgb(252, 252, 252);
+    text-shadow: 2px 0px 2px rgba(245, 245, 245, 0.178);
+}

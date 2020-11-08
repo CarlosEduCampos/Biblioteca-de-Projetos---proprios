@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    <link rel="stylesheet" href="-css-/-corpo_login-.css">
+    <link rel="stylesheet" href="-css-/-info-.css">
+</head>
+<body>
+    <h1> Crie aqui seu currículo </h1>
+    <section id="corpo">
+
+        <header><!-- titulo -->
+            <h1> Dados Necessários </h1>
+        </header>
+        <div id="all"></div>
+            <section class="bloco" id="lef"> <!-- Bloco branco -->
+            
+                <div class="areatxt"> <!-- Area de texto -->
+                    Nome Completo:
+                    <p>
+                        <input type="search" name="txtnome" id="nome">
+                    </p>
+                </div>
+            
+                <div class="areatxt"> <!-- Area de texto -->
+                    Nacionalidade:
+                    <p>
+                        <input type="search" name="txtnaci" id="nacional">
+                    </p>
+                </div>
+
+                <div class="areatxt"> <!-- Area de texto -->
+                    Idade: 
+                    <p> <!--Receber dado ano-->        
+                        <input type="number" name="txtano" id="txtano" min="0">
+                    </p>
+                </div>
+
+                <div class="areatxt"> <!--Area texto -->
+                    Estádo Civil:
+                    <p>
+                        <input type="search" name="txtstatus" id="status">
+                    </p>
+                </div>
+
+                <div class="areatxt">
+                    Formação Acadêmica:
+                    <p>
+                        <input type="search" name="txteduc" id="educ">
+                    </p>
+                </div>
+
+                <div class="areatxt">
+                    Cargo de interesse:
+                    <p>
+                        <input type="search" name="txtcargo" id="cargo">
+                    </p>
+                
+                </div>
+
+                <div class="areatxt">
+                    Numero do Celular
+                    <p>
+                        <input type="number" id="cel">
+                    </p>
+                </div>
+
+                <div class="areatxt">
+                    E-mail
+                    <p>
+                        <input type="email" id="email">
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="bloco" id="rig">
+
+                <div class="areatxt">
+                    Cursos:
+                    <p>
+                        <input type="search" name="txtcurso" id="curso">
+                        <input type="button" value=" Registrar " id='bt_res' class="bta" onclick="registrar()">
+                    </p>
+                    </div>
+                    <p> Abaixo aparecera os cursos registrados </p>
+                    <div id="tela">
+                </div>
+                <p><input type="button" value=" Limpar " class="bta" onclick="limpar()"></p>
+
+            </section>
+            
+            <section class="bloco" id="xp">
+
+                <div class="areatxt">
+                    Experiências:
+                    <div class="areatxt">
+                        Empresa:
+                        <p>
+                            <input type="search" name="txtexp" id="emp">
+                        </p>
+                    </div>
+
+                    <div class="areatxt">
+                        Profissão:
+                        <p>
+                            <input type="search" id="prof">
+                        </p>
+                    </div>
+
+                    <div class="areatxt">
+                        Data de Entrada:
+                        <p>
+                            <input type="date" id="data_e">
+                        </p>
+                    </div>
+                    
+                    <div class="areatxt">
+                        Data de Saída:
+                        <p>
+                            <input type="date" id="data_s">
+                        </p>
+                    </div>
+                    <input type="button" value=" Registrar " class="bta" id='bt_res_xp' onclick="registrar_xp()">
+                </div>
+
+                <p> Abaixo aparecera experiências registradas </p>
+                <div id="tela_xp">
+                </div>
+                <p><input type="button" value=" Limpar " onclick="limpar_xp()" class="bta"></p>
+
+            </section>
+       
+        </div>
+    </section> 
+                
+    <div class="botão"><!-- Area de texto -->
+        <!-- botão de finalização-->
+        <p><input type="button" value=" Finalizar " id="bta"onclick="clicar()">
+        </p>
+    </div>
+
+        <!-- botão de acesso ao curriculo -->
+
+    <label for="bt_curriculo" id="clicar">
+        <img src="-imgs-/curriculo.png" alt="entrada_curriculo">
+        <p id="mA">
+            <img src="-imgs-/upppont.png" alt="mão apontando p/ cima">
+        </p>
+        <p>
+            <strong>Click aqui ( Resultado abaixo )</strong>
+        </p>
+    </label>
+
+    <input type="checkbox" id="bt_curriculo">
+        <!-- Apresentarção do curriculo -->
+    <section class="info">
+        
+        <div id='foto'>
+            <img src="-imgs-/usenone.png" alt="foto da pessoa" id="ft_pessoa">
+        </div>
+
+        <div id="infp" class="ainfo"> <!-- Area das iformações  pessoais-->
+            <h3> Informações pessoais</h3>
+            <p id="rnome">Nome:</p>
+            <p id="rnacional">Nacionalidade:</p>
+            <p id="rstatus">Estátus Civil:</p>
+            <p id="ridade">Idade:</p>
+            <div id="direita"><p><img src="-icons-/gmail.png" alt="img-emil"></p><p id="em">iiiii@iiii.com</p><p><img src="-icons-/whatssap.png" alt="img_whats"></p><p id="wt">9999-9999</p></div>
+        </div>
+
+         <div id="infc" class="ainfo"> <!--Area informação sobre o cargo que pretende ocupar-->
+            <h3 id="rcargo"> Pretendo com esté currículo oculpar a vaga de # em sua empresa </h3>
+            <h4 id='soci'></h4>
+         </div>
+
+         <div id="inft" class="ainfo">
+            <h3> Formação acadêmica: </h3> 
+            <p id="reduc"></p>
+            <h3> Cursos:</h3>
+            <div id="rcurso"> </div>
+            <h3> Experiências: </h3>
+            <div id="expe"></div>
+         </div>
+    </section>
+
+    <script src="-JS-/corriculo.js"></script>
+</body>
+</html>
